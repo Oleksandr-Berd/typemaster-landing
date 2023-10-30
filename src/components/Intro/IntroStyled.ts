@@ -1,9 +1,18 @@
 import styled from "@emotion/styled";
+import { PropImage } from "../../utils/types";
 
-export const ContentWrapper =styled.div`
+export const ContentWrapper =styled.div<PropImage>`
 padding-left: 24px;
 padding-right: 24px;
-padding-bottom: 687px;
+padding-bottom: 292px;
+
+&::after{
+display: inline-block;
+
+    content: url(${props => props.bgAfter});
+
+    margin-top: 64px;
+}
 `
 
 export const Title = styled.h1`
