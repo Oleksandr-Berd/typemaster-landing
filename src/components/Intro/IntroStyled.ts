@@ -1,41 +1,41 @@
 import styled from "@emotion/styled";
 import { PropImage } from "../../utils/types";
 
-export const ContentWrapper =styled.div<PropImage>`
-padding-left: 24px;
-padding-right: 24px;
-padding-bottom: 292px;
+export const ContentWrapper = styled.div<PropImage>`
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  
+  &::after {
+    display: inline-block;
 
-&::after{
-display: inline-block;
-
-    content: url(${props => props.bgAfter});
+    content: url(${(props) => props.bgAfter});
 
     margin-top: 64px;
-}
-`
+  }
+`;
 
 export const Title = styled.h1`
-margin-bottom: 32px;
+  margin-bottom: 32px;
 
-text-transform: uppercase;
+  text-transform: uppercase;
 
-font-size: 48px;
-`
+  font-size: 48px;
+`;
 
 export const Content = styled.p`
-margin-bottom: 32px;
+  margin-bottom: 32px;
 
-font-size: 16px;
-line-height: 1.63;
-`
+  font-size: 16px;
+  line-height: 1.63;
+`;
 
 export const InsideCon = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 export const Release = styled.p`
   text-transform: uppercase;

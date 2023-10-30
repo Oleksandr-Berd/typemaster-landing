@@ -3,6 +3,6 @@ export type PropStyle = {
 };
 
 export type PropImage = {
-    bgAfter?:string,
-bgBefore?:string,
-}
+  bgAfter?: string;
+  bgBefore?: string;
+};
