@@ -14,6 +14,13 @@ export const LinkWrapper = styled.div<PropStyle>`
 
   border-radius: 8px;
 
+  @media (min-width: 768px){
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
   & > a {
     text-transform: uppercase;
 
