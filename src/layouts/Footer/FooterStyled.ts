@@ -13,4 +13,8 @@ export const FooterStyled = styled.footer`
         font-weight: bold;
     }
   }
+
+  @media (min-width: 768px){
+    padding-bottom: 43px;
+  }
 `;
