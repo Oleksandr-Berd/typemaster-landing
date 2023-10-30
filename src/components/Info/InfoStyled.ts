@@ -11,12 +11,25 @@ export const ContentWrapper = styled.div<PropImage>`
 
   text-align: center;
 
+@media (min-width: 768px){
+    padding-top: 392px;
+    padding-bottom: 142px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: left;
+}
+
   &::before {
     position: absolute;
     top: 0;
     left: 0;
 
     content: url(${(props) => props.bgBefore});
+
+    @media (min-width: 768px){
+        transform: translateX(40px);
+    }
   }
 
   &::after{
@@ -30,6 +43,13 @@ export const ContentWrapper = styled.div<PropImage>`
   }
 `;
 
+export const InsideWrapper = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+`
+
 export const Title = styled.h2`
   width: 255px;
 
@@ -40,9 +60,18 @@ export const Title = styled.h2`
   text-transform: uppercase;
   font-size: 32px;
   line-height: 1.13;
+
+  @media (min-width: 768px){
+    margin-bottom: 0;
+    margin-right: 36px;
+  }
 `;
 
 export const Content = styled.p`
   font-size: 16px;
   line-height: 1.63;
+
+  @media (min-width: 768px){
+    width: 398px;
+  }
 `;
