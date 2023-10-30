@@ -18,9 +18,8 @@
 
 body {
   margin: 0;
-  font-family: "BarlowMedium";
   background-color: #fff;
-  color: #7B8BAD;
+  
 }
 
 code {
@@ -39,15 +38,19 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6
+{
   margin: 0;
   font-family: "BarlowBlack";
   color: #162542;
 }
 
+p{
+  margin: 0;
+  font-family: "BarlowMedium";
+  color: #7B8BAD;
+}
 a {
   text-decoration: none;
-  color: #162542;
   font-family: "BarlowBold";
 }
