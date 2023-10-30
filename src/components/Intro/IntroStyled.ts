@@ -5,13 +5,33 @@ export const ContentWrapper = styled.div<PropImage>`
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
-  
+
+  @media (min-width: 768px) {
+    position: relative;
+
+    width: 339px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-bottom: 100px;
+  }
+
   &::after {
     display: inline-block;
 
     content: url(${(props) => props.bgAfter});
 
     margin-top: 64px;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      transform: translateX(381px) translateY(-115px);
+    }
   }
 `;
 
