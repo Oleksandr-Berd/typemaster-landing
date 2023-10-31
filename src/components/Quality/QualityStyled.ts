@@ -19,6 +19,16 @@ export const CommonWrapper = styled.ul`
 
     text-align: left;
   }
+
+  @media (min-width: 1440px){
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 128px;
+  }
 `;
 
 export const Item = styled.li`
@@ -27,6 +37,10 @@ export const Item = styled.li`
 
     @media (min-width: 758px) {
       margin-bottom: 0;
+    }
+
+    @media (min-width: 1440px){
+        margin-right: 30px;
     }
   }
 
@@ -58,6 +72,10 @@ export const Item = styled.li`
 
     @media (min-width: 768px){
         width: 281px;
+    }
+
+    @media (min-width: 1440px){
+        width: 255px;
     }
   }
 `;

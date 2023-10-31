@@ -17,4 +17,8 @@ export const FooterStyled = styled.footer`
   @media (min-width: 768px){
     padding-bottom: 43px;
   }
+
+  @media (min-width: 1440px){
+    margin-bottom: 40px;
+  }
 `;
