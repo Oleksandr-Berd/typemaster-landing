@@ -6,12 +6,18 @@ import OrderButton from "../../ui/OrderButton/OrderButton";
 
 import introBgMob from "../../assets/images/intro_bg_mob.jpg";
 import introBgTab from "../../assets/images/intro_bg_tab.jpg";
+import introBgDesk from "../../assets/images/intro_bg_desk.svg"
+import introBgFigure from "../../assets/images/desk_figure_intro.svg"
 
 const Intro = () => {
   const isTablet = useMediaQuery("(min-width:768px) and (max-width:1439px)");
+  const isDesktop = useMediaQuery("(min-width:1440px)")
 
   return (
-    <SC.ContentWrapper bgAfter={isTablet ? introBgTab : introBgMob}>
+    <SC.ContentWrapper
+      bgAfter={isTablet ? introBgTab : isDesktop ? introBgDesk : introBgMob}
+      bgBefore={introBgFigure}
+    >
       <div>
         <SC.Title>typemaster keyboard</SC.Title>
         <SC.Content>
