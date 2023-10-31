@@ -30,7 +30,7 @@ export const ContentWrapper = styled.div<PropImage>`
       top: 0;
       right: 0;
 
-      transform: translateX(776px) translateY(-52px);
+      transform: translateX(805px) translateY(-52px);
 
       content: url(${(props) => props.bgBefore});
     }
