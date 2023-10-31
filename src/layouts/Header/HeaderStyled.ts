@@ -17,5 +17,12 @@ padding-right: 24px;
     padding-right: 40px;
     padding-bottom: 122px;
 }
+
+@media (min-width: 1440px){
+    padding-top: 55px;
+    padding-bottom: 143px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
 `
 
